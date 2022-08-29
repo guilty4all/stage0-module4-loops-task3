@@ -11,8 +11,15 @@ public class GreatestCommonDivisor {
         }else {
             border = second;
         }
-        if(first == second){
+        if(first == second) {
             result = first;
+
+        }else if (first == 0 || second == 0){
+            if (first > second){
+                result = first;
+            }else {
+                result = second;
+            }
         }else{
             for(int i = 0;i <= border; i++){
                 if (first % del == 0 && second % del == 0){
