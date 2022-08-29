@@ -11,7 +11,6 @@ public class DigitsSum {
 
         for(int i = 0;i<word.length();i++){
             num = Character.getNumericValue(word.charAt(i));
-            System.out.println(num);
             result += num;
         }
         System.out.println(result);
